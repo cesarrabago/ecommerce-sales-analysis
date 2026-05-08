@@ -1,21 +1,21 @@
-# 📊 Análisis de Ventas eCommerce — Febrero 2026
+# Análisis de Ventas eCommerce — Febrero 2026
 
 > EDA estructurado sobre **621 órdenes únicas** en 2 mercados (US, MX) y 6 categorías de producto. Incluye notebook técnico en Python y presentación ejecutiva en PowerPoint.
 
 ---
 
-## 📌 Contexto
+## Contexto
 
 Análisis exploratorio de un dataset de órdenes de ecommerce de febrero 2026, enfocado en cuatro frentes: **calidad de datos, salud comercial, comportamiento por mercado y oportunidades de optimización operativa**. El entregable final es una presentación ejecutiva pensada para áreas comerciales y operativas.
 
-## 🎯 Objetivos
+## Objetivos
 
 - Diagnosticar la calidad del dataset y documentar todas las decisiones de limpieza
 - Calcular KPIs base de revenue, cancelaciones y tipo de fulfillment
 - Comparar comportamiento entre mercados (US vs MX)
 - Generar insights accionables para áreas comerciales y operativas
 
-## 🧹 Decisiones de calidad de datos
+## Decisiones de calidad de datos
 
 | # | Decisión | Justificación |
 |---|---|---|
@@ -24,7 +24,7 @@ Análisis exploratorio de un dataset de órdenes de ecommerce de febrero 2026, e
 | 03 | Documentación de outliers en canal External | 2 órdenes con cantidades de 112 y 51 unidades identificadas como B2B/mayoreo, conservadas con flag |
 | 04 | Revenue calculado como `unit_price × quantity` | Campos `tax` y `shipping_cost` con >70% de nulos; se omiten para mantener consistencia |
 
-## 🔑 Insights clave
+## Insights clave
 
 | KPI | Valor | Comentario |
 |---|---|---|
@@ -37,7 +37,7 @@ Análisis exploratorio de un dataset de órdenes de ecommerce de febrero 2026, e
 
 **Hallazgo principal:** El mercado MX muestra una tasa de cancelación 2.5x mayor que US. Esto sugiere problemas de fulfillment, comunicación pre-venta o gestión de inventario específicos del mercado mexicano que merecen profundización.
 
-## 📂 Entregables
+## Entregables
 
 | Archivo | Tipo |
 |---|---|
@@ -45,11 +45,11 @@ Análisis exploratorio de un dataset de órdenes de ecommerce de febrero 2026, e
 | `Analisis_Ventas_Feb2026.ipynb` | Notebook con análisis técnico completo |
 | `ecommerce_orders_feb2026.csv` | Dataset (si políticas de datos lo permiten) |
 
-## 🛠️ Stack
+## Stack
 
 Python · pandas · matplotlib · seaborn · PowerPoint
 
-## 📑 Estructura del notebook
+## Estructura del notebook
 
 1. Carga y diagnóstico inicial
 2. Calidad de datos (nulos, outliers, valores únicos)
